@@ -12,9 +12,9 @@ build:
       sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
       sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
       mvn clean install
-      - |
-        export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64
-        export PATH=$PATH:$JAVA_HOME
-        sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
-        sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
-        mvn build
+    - |
+      export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64
+      export PATH=$PATH:$JAVA_HOME
+      sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
+      sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
+      mvn build
