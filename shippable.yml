@@ -16,4 +16,3 @@ build:
     - sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
     - sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
     - mvn clean install
-    - mvn build
