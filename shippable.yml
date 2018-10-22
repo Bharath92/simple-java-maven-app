@@ -9,10 +9,10 @@ build:
     image_tag: master
     pull: true
   ci:
-    - export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64
-    - export PATH=$PATH:$JAVA_HOME
-    - update-alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_181-amd64/bin/java 1
-    - update-alternatives --install /usr/bin/javac javac /usr/java/jdk1.8.0_181-amd64/bin/javac 1
-    - sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
-    - sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
+    #- export JAVA_HOME=/usr/java/jdk1.8.0_181-amd64
+    #- export PATH=$PATH:$JAVA_HOME
+    #- update-alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_181-amd64/bin/java 1
+    #- update-alternatives --install /usr/bin/javac javac /usr/java/jdk1.8.0_181-amd64/bin/javac 1
+    #- sudo update-alternatives --set java /usr/java/jdk1.8.0_181-amd64/bin/java
+    #- sudo update-alternatives --set javac /usr/java/jdk1.8.0_181-amd64/bin/javac
     - mvn clean install
